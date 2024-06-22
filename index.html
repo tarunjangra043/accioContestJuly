@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #ffd700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #000;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav li {
+        margin-left: 2rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #111;
+      }
+
+      .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 2rem;
+        margin-top: 5rem;
+      }
+
+      .intro-text {
+        width: 45%;
+      }
+
+      .intro-text h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .intro-text p {
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+
+      .intro-button {
+        display: inline-block;
+        background-color: #ffd700;
+        color: #111;
+        padding: 1rem 4rem;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .intro-image {
+        width: 45%;
+      }
+
+      .intro-image img {
+        width: 100%;
+        height: auto;
+      }
+
+      .contact-us {
+        padding: 5rem 2rem;
+        color: #ffd700;
+      }
+
+      .contact-us h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+
+      .form-group {
+        margin-bottom: 2rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ffd700;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+      }
+
+      ::placeholder {
+        color: #ffd700;
+        opacity: 1;
+      }
+
+      .form-group input:focus {
+        outline: none;
+      }
+
+      #input-one {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .one-line {
+        width: 49%;
+      }
+
+      .submit-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      #submit {
+        display: block;
+        background-color: #ffd700;
+        color: #111;
+        padding: 1rem 2rem;
+        border-radius: 40px;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      table {
+        width: 80%;
+        margin-top: 5rem;
+        border-collapse: collapse;
+      }
+
+      .tabl {
+        display: flex;
+        justify-content: center;
+      }
+
+      th,
+      td {
+        padding: 1rem;
+        text-align: left;
+        border: 1px solid #ffd700;
+        color: #ffd700;
+      }
+
+      tfoot tr td {
+        background-color: #ffd700;
+        color: black;
+      }
+      /* th {
+        background-color: #ffd700;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Startup</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <div class="intro-text">
+        <h2>Startup Landing Page</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#" class="intro-button">Login</a>
+      </div>
+      <div class="intro-image">
+        <img src="image.png" alt="Jeff Bezos" />
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div id="input-one">
+          <div class="form-group one-line">
+            <input
+              type="text"
+              id="mobile-number"
+              name="mobile-number"
+              placeholder="Mobile Number"
+            />
+          </div>
+          <div class="form-group one-line">
+            <input type="text" id="city" name="city" placeholder="City" />
+          </div>
+        </div>
+        <div class="submit-div">
+          <button id="submit" type="submit">Submit Form</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="tabl">
+      <table>
+        <thead>
+          <tr>
+            <th>SNO.</th>
+            <th>Startup Name</th>
+            <th>Startup Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Wowindia</td>
+            <td>A startup with WOW Ideas.</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Loreum Ipsum</td>
+            <td>Loreum Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Loreum Ipsum</td>
+            <td>Loreum Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Loreum Ipsum</td>
+            <td>Loreum Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Loreum Ipsum</td>
+            <td>Loreum Ipsum Text</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Loreum Ipsum</td>
+            <td>Loreum Ipsum Text</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>00.</td>
+            <td>Final Footer</td>
+            <td>Loreum Ipsum Text</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </body>
+</html>
